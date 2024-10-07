@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: "Lato", system-ui;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 15px;
+
+    margin: 0 auto;
+}

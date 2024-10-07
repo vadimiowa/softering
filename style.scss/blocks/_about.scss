@@ -1,0 +1,39 @@
+.about__block {
+    position: relative;
+
+    .the__title {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000;
+        font-weight: 600;
+        font-size: 37px;
+        text-transform: uppercase;
+        word-spacing: 30px;
+        margin: 0;
+        text-align: center;
+        background: #fff;
+        width: 400px;
+    }
+
+    .about__text {
+        font-size: 16px;
+        padding: 50px 180px;
+        text-align: center;
+        border: 2px solid #000;
+        line-height: 1.5;
+        margin: 160px 0px;
+    }
+     ///////////////// media /////////////////
+     @media (max-width: 690px) {
+        .the__title {
+            font-size: 25px;
+            width: 200px;
+        }
+        .about__text {
+            padding: 50px 50px;
+        }
+    }
+    ///////////////// media /////////////////
+}

@@ -1,0 +1,67 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/background.jpg") center no-repeat;
+    background-size: cover;
+
+    .lab {
+        display: flex;
+        justify-content: center;
+
+        .lab__blocktitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+
+            .lab__logo {
+                display: block;
+                max-width: 100%;
+                width: 10%;
+                height: auto;
+                margin-bottom: 70px;
+            }
+
+            .lab__title {
+                color: #fff;
+                font-weight: 600;
+                font-size: 54px;
+                text-transform: uppercase;
+                word-spacing: 30px;
+                margin: 0;
+                text-align: center;
+            }
+
+            .lab__undertitle {
+                font-size: 15px;
+                font-weight: 400;
+                word-spacing: 3px;
+                margin-bottom: 15px;
+            }
+
+            // Dop Classes
+            .margin {
+                margin-bottom: 50px;
+            }
+            .correct__img {
+                width: 4%;
+                margin-bottom: 0;
+                margin-top: 150px;
+            }
+
+            ///////////////// media /////////////////
+            @media (max-width: 690px) {
+                .lab__title {
+                    font-size: 30px;
+                }
+                .lab__undertitle  {
+                    font-size: 15px;
+                }
+                .about__text {
+                    padding: 0;
+                }
+            }
+            ///////////////// media /////////////////
+        }
+    }
+}

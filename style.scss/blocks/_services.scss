@@ -1,0 +1,68 @@
+.services {
+    width: 100%;
+    background: url("../img/nextback.jpg") center no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+
+    .services__block {
+        position: relative;
+        margin: 60px 0px;
+
+        .services__title {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-weight: 600;
+            font-size: 37px;
+            text-transform: uppercase;
+            word-spacing: 30px;
+            margin: 0;
+            text-align: center;
+            width: 400px;
+        }
+
+        .services__text {
+            position: relative;
+            font-size: 16px;
+            padding: 50px 180px;
+            text-align: center;
+            line-height: 1.5;
+            color: #fff;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+        }
+
+        .services__text::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0%;
+            width: 30%;
+            border-bottom: 2px solid #fff;
+        }
+        .services__text::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0%;
+            width: 30%;
+            border-bottom: 2px solid #fff;
+        }
+
+        ///////////////// media /////////////////
+        @media (max-width: 690px) {
+            .services__text {
+                padding: 50px 50px;
+            }
+            .services__title {
+                font-size: 25px;
+            }
+        }
+        ///////////////// media /////////////////
+    }
+}
