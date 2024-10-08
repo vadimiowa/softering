@@ -3,7 +3,7 @@
     height: 100vh;
 
     background: url("../img/background.jpg") center
-    no-repeat ;
+    no-repeat;
     background-size: cover;
 
     .lab {
@@ -48,8 +48,14 @@
         margin-bottom: 50px;
     }
     .correct__img {
-        width: 4%;
-        margin-bottom: 0;
+        width: 5%;
+        margin-top: 150px;
+        transition: 2s;
+    }
+    .activeTop {
+        margin-top: 100px;
+    }
+    .activeBottom {
         margin-top: 150px;
     }
     ///////////////// media /////////////////
@@ -66,6 +72,9 @@
         .lab__logo {
             margin-bottom: 100px;
         }
+        .correct__img {
+            width: 7%;
+        }
     }
     ///////////////// media /////////////////
 }
@@ -73,7 +82,7 @@
 @media (max-width: 690px) {
     .home {
         display: flex;
-        height: auto;
+        height: 800px;
         overflow: hidden;
     }
 }

@@ -59,8 +59,14 @@ body {
   margin-bottom: 50px;
 }
 .home .correct__img {
-  width: 4%;
-  margin-bottom: 0;
+  width: 5%;
+  margin-top: 150px;
+  transition: 2s;
+}
+.home .activeTop {
+  margin-top: 100px;
+}
+.home .activeBottom {
   margin-top: 150px;
 }
 @media (max-width: 690px) {
@@ -76,12 +82,15 @@ body {
   .home .lab__logo {
     margin-bottom: 100px;
   }
+  .home .correct__img {
+    width: 7%;
+  }
 }
 
 @media (max-width: 690px) {
   .home {
     display: flex;
-    height: auto;
+    height: 800px;
     overflow: hidden;
   }
 }
