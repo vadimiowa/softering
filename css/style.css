@@ -20,7 +20,6 @@ body {
 .home {
   width: 100%;
   height: 100vh;
-  min-height: 790px;
   background: url("../img/background.jpg") center no-repeat;
   background-size: cover;
 }
@@ -28,20 +27,20 @@ body {
   display: flex;
   justify-content: center;
 }
-.home .lab .lab__blocktitle {
+.home .lab__blocktitle {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
 }
-.home .lab .lab__blocktitle .lab__logo {
+.home .lab__logo {
   display: block;
   max-width: 100%;
   width: 10%;
   height: auto;
   margin-bottom: 70px;
 }
-.home .lab .lab__blocktitle .lab__title {
+.home .lab__title {
   color: #fff;
   font-weight: 600;
   font-size: 54px;
@@ -50,32 +49,42 @@ body {
   margin: 0;
   text-align: center;
 }
-.home .lab .lab__blocktitle .lab__undertitle {
+.home .lab__undertitle {
   font-size: 15px;
   font-weight: 400;
   word-spacing: 3px;
   margin-bottom: 15px;
 }
-.home .lab .lab__blocktitle .margin {
+.home .margin {
   margin-bottom: 50px;
 }
-.home .lab .lab__blocktitle .correct__img {
+.home .correct__img {
   width: 4%;
   margin-bottom: 0;
   margin-top: 150px;
 }
 @media (max-width: 690px) {
-  .home .lab .lab__blocktitle .lab__title {
+  .home .lab__title {
     font-size: 30px;
   }
-  .home .lab .lab__blocktitle .lab__undertitle {
+  .home .lab__undertitle {
     font-size: 15px;
   }
-  .home .lab .lab__blocktitle .about__text {
+  .home .about__text {
     padding: 0;
+  }
+  .home .lab__logo {
+    margin-bottom: 100px;
   }
 }
 
+@media (max-width: 690px) {
+  .home {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+  }
+}
 .about__block {
   position: relative;
 }
@@ -174,6 +183,11 @@ body {
   }
 }
 
+@media (max-width: 690px) {
+  .services {
+    overflow: hidden;
+  }
+}
 .what {
   position: relative;
   width: 100%;

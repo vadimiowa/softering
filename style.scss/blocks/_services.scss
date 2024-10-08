@@ -66,3 +66,9 @@
         ///////////////// media /////////////////
     }
 }
+
+@media (max-width: 690px) {
+    .services {
+        overflow: hidden;
+    }
+}
