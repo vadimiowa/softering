@@ -15,9 +15,21 @@ let mouse = new AnimationElements({
     mouse: document.querySelector(".correct__img")
 })
 
-setInterval(() => {
-    mouse.bottomAndtopAdd();
-}, 1000)
-setInterval(() => {
-    mouse.bottomAndtopRemove();
-}, 3000)
+let promiseFun = (one = 1000, two = 2000) => {
+    let promise = new Promise(resolve => {
+        setInterval(() => {
+            resolve(mouse.bottomAndtopAdd());
+        }, one)
+        setInterval(() => {
+            resolve(mouse.bottomAndtopRemove());
+        }, two)
+    })
+
+    return promise;
+}
+
+let show = async () => {
+    await promiseFun();
+}
+
+show();

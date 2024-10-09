@@ -61,7 +61,7 @@ body {
 .home .correct__img {
   width: 5%;
   margin-top: 150px;
-  transition: 2s;
+  transition: 1s;
 }
 .home .activeTop {
   margin-top: 100px;
