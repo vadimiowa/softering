@@ -28,6 +28,12 @@
         border: 2px solid #000;
         line-height: 1.5;
         margin: 160px 0px;
+        border-radius: 100px;
+        transition: 0.5s;
+    }
+    .activeBorder {
+        border-radius: 0;
+        border-color: #0016c5;
     }
 
     .contact__button {
@@ -55,6 +61,10 @@
         }
         .contact__button {
             padding: 15px 70px;
+        }
+        .activeBorderThen {
+            border-radius: 0;
+            border-color: #0016c5;
         }
     }
     ///////////////// media /////////////////

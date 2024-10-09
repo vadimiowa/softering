@@ -119,6 +119,12 @@ body {
   border: 2px solid #000;
   line-height: 1.5;
   margin: 160px 0px;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+.about__block .activeBorder {
+  border-radius: 0;
+  border-color: #0016c5;
 }
 @media (max-width: 690px) {
   .about__block .the__title {
@@ -166,6 +172,11 @@ body {
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
+  border-radius: 0px 0px 150px 150px;
+  transition: 0.5s;
+}
+.services .services__block .activeBorder {
+  border-radius: 0;
 }
 .services .services__block .services__text::before {
   content: "";
@@ -203,6 +214,8 @@ body {
   border: 2px solid;
   margin-bottom: 160px;
   margin-top: 160px;
+  border-radius: 100px;
+  transition: 0.5s;
 }
 .what .what__title {
   position: absolute;
@@ -247,6 +260,15 @@ body {
     font-size: 25px;
     width: 300px;
   }
+}
+
+.activeBorderTop {
+  border-radius: 0px 0px 100px 100px;
+  border-color: #0016c5;
+}
+
+.activeBorderBottom {
+  border-radius: 0;
 }
 
 .photoGroup {
@@ -326,6 +348,12 @@ body {
   border: 2px solid #000;
   line-height: 1.5;
   margin: 160px 0px;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+.contactus__block .activeBorder {
+  border-radius: 0;
+  border-color: #0016c5;
 }
 .contactus__block .contact__button {
   display: flex;
@@ -351,6 +379,10 @@ body {
   }
   .contactus__block .contact__button {
     padding: 15px 70px;
+  }
+  .contactus__block .activeBorderThen {
+    border-radius: 0;
+    border-color: #0016c5;
   }
 }
 

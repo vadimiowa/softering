@@ -35,6 +35,11 @@
             border-left: 2px solid #fff;
             border-right: 2px solid #fff;
             border-bottom: 2px solid #fff;
+            border-radius: 0px 0px 150px 150px;
+            transition: 0.5s;
+        }
+        .activeBorder {
+            border-radius: 0;
         }
 
         .services__text::before {

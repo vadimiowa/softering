@@ -24,6 +24,13 @@
         border: 2px solid #000;
         line-height: 1.5;
         margin: 160px 0px;
+        border-radius: 100px;
+        transition: 0.5s;
+    }
+
+    .activeBorder {
+        border-radius: 0;
+        border-color: #0016c5;
     }
      ///////////////// media /////////////////
      @media (max-width: 690px) {
