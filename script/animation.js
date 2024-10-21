@@ -31,13 +31,13 @@ class AnimationElements {
 
     async main() {
         for(let el of this.groupTitle) {
-            await this.process(el)
+            await this.process(el);
         }
     }
 
     async mainNone() {
         for(let el of this.groupTitle) {
-            await this.processNot(el)
+            await this.processNot(el);
         }
     }
 
@@ -63,7 +63,7 @@ class AnimationElements {
     radiusBorder() {
         this.window.addEventListener("scroll", () => {
             let scroll = this.window.scrollY;
-            console.log(scroll);
+            // console.log(scroll);
             if(scroll > 500) {
                 this.border.classList.add("activeBorder");
             } else {
@@ -144,11 +144,6 @@ let groupTitleElements = new AnimationElements({
 
 
 groupTitleElements.showMain();
-
-
-
-
-
 
 
 
