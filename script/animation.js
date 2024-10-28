@@ -21,11 +21,11 @@ class AnimationElements {
     }
 
     async process(el) {
-        await this.promise(200);
+        await this.promise(100);
         this.addClasses(el);
     }
     async processNot(el) {
-        await this.promise(200);
+        await this.promise(100);
         this.removeClasses(el);
     }
 

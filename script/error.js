@@ -3,6 +3,12 @@ class MakeError {
         this.allInputs = options.allInputs;
         this.inputPhoneNumber = options.inputPhoneNumber;
         this.button = options.button;
+        this.planeAfterSend = options.planeAfterSend;
+        this.sent = options.sent;
+    }
+
+    promise(sec) {
+        return new Promise(resolve => setTimeout(() => resolve(), sec));
     }
 
     showErrorClick() {
@@ -17,7 +23,9 @@ class MakeError {
             })
 
             if(allFilled && this.inputPhoneNumber.value.length === 17) {
-                document.location.reload();
+                this.promise(1000).then(() => document.location.reload());
+                this.planeAfterSend.classList.add("after");
+                this.sent.classList.add("sentAfter");
             }
         })
     }
@@ -57,7 +65,9 @@ class MakeError {
 let input = new MakeError({
     allInputs: document.querySelectorAll(".inputs"),
     button: document.querySelector(".button"),
-    inputPhoneNumber: document.querySelector(".phoneNumber")
+    inputPhoneNumber: document.querySelector(".phoneNumber"),
+    planeAfterSend: document.querySelector(".planeAfterSend"),
+    sent: document.querySelector(".sent")
 });
 
 input.showErrorClick();
