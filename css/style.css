@@ -453,13 +453,16 @@ body {
   background: none;
   margin-right: 10px;
   outline: none;
+  transition: 0.3s;
 }
 .form .form__name .block__name .nameInput:focus {
   border: 1px #005bff solid;
-  transition: 0.3s;
 }
 .form .form__name .block__name .newMargin {
   margin-right: 0;
+}
+.form .form__name .block__name .redLine {
+  border: 1px solid red;
 }
 @media (max-width: 690px) {
   .form .form__name .block__name .nameInput {
@@ -482,10 +485,13 @@ body {
   background: none;
   margin-bottom: 30px;
   outline: none;
+  transition: 0.3s;
 }
 .form .data .nameInput:focus {
   border: 1px #005bff solid;
-  transition: 0.3s;
+}
+.form .data .redLine {
+  border: 1px solid red;
 }
 .form .title__input {
   font-size: 13px;

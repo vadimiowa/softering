@@ -43,13 +43,16 @@
                 background: none;
                 margin-right: 10px;
                 outline: none;
+                transition: 0.3s;
             }
             .nameInput:focus {
                 border: 1px #005bff solid;
-                transition: 0.3s;
             }
             .newMargin {
                 margin-right: 0;
+            }
+            .redLine {
+                border: 1px solid red;
             }
 
             @media (max-width: 690px) {
@@ -76,10 +79,13 @@
             background: none;
             margin-bottom: 30px;
             outline: none;
+            transition: 0.3s;
         }
         .nameInput:focus {
             border: 1px #005bff solid;
-            transition: 0.3s;
+        }
+        .redLine {
+            border: 1px solid red;
         }
     }
 
