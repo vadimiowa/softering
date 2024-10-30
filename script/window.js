@@ -5,6 +5,7 @@ class Window {
         this.body = options.body;
         this.plane = options.plane;
         this.clouse = options.clouse;
+        this.none = options.none;
     }
 
     clickMainButton() {
@@ -12,6 +13,7 @@ class Window {
             this.form.classList.add("active");
             this.body.classList.add("scrollHidden");
             this.plane.classList.add("active");
+            this.none.classList.add("block");
         })
     }
     clouseForm() {
@@ -19,6 +21,7 @@ class Window {
             this.form.classList.remove("active");
             this.body.classList.remove("scrollHidden");
             this.plane.classList.remove("active");
+            this.none.classList.remove("block");
         })
     }
 }
@@ -28,7 +31,8 @@ let form = new Window({
     form: document.querySelector(".form"),
     body: document.querySelector("body"),
     plane: document.querySelector(".plane"),
-    clouse: document.querySelector(".clouse")
+    clouse: document.querySelector(".clouse"),
+    none: document.querySelector(".none")
 })
 
 form.clickMainButton();

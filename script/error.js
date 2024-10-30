@@ -3,8 +3,9 @@ class MakeError {
         this.allInputs = options.allInputs;
         this.inputPhoneNumber = options.inputPhoneNumber;
         this.button = options.button;
+        this.none = options.none;
         this.planeAfterSend = options.planeAfterSend;
-        this.sent = options.sent;
+        this.sentImg = options.sentImg;
     }
 
     promise(sec) {
@@ -25,7 +26,8 @@ class MakeError {
             if(allFilled && this.inputPhoneNumber.value.length === 17) {
                 this.promise(1000).then(() => document.location.reload());
                 this.planeAfterSend.classList.add("after");
-                this.sent.classList.add("sentAfter");
+                this.sentImg.classList.add("loading");
+                this.none.classList.add("top");
             }
         })
     }
@@ -67,7 +69,8 @@ let input = new MakeError({
     button: document.querySelector(".button"),
     inputPhoneNumber: document.querySelector(".phoneNumber"),
     planeAfterSend: document.querySelector(".planeAfterSend"),
-    sent: document.querySelector(".sent")
+    sentImg: document.querySelector(".sentImg"),
+    none: document.querySelector(".none")
 });
 
 input.showErrorClick();
